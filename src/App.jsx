@@ -34,7 +34,7 @@ function App() {
       alert("กรุณาเลือกหนังที่คุณชอบ");
       return;
     }
-    alert(`สวัสดี: ${userData.name} e-mail: ${userData.email} คุณเลือกหนัง: ${selectedMovie}`);
+    alert(`สวัสดี: ${userData.name} e-mail: ${userData.email} คุณเลือกหนัง: ${selectedMovie} `);
   };
 
 return (
