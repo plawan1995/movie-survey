@@ -36,20 +36,20 @@ export  function UserForm({ onSubmit }) {
 return (
     <form onSubmit={handleSubmit} className="max-w-md mx-auto p-4 bg-white rounded shadow-md space-y-4">
       <div>
-        <label className="block font-semibold mb-1">ชื่อ: </label>
+        <label className="block font-semibold mb-1">Name: </label>
         <input 
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
         className="w-full border border-gray-300 rounded px-3 py-2"
-        placeholder="กรอกชื่อของคุณ"
+        placeholder="Please enter your name"
         />
         {errors.name && <p className="error">{errors.name}</p>}
       </div>
 
 
       <div>
-        <label className="block font-semibold mb-1">อีเมล: </label>
+        <label className="block font-semibold mb-1">Email: </label>
         <input
           type="email"
           value={email}
@@ -64,7 +64,7 @@ return (
           type="submit"
           className="w-full bg-blue-500 text-white rounded px-4 py-2 rounded hover:bg-blue-600"
         >
-          ยืนยัน
+          Submit
         </button>
     </form>
   );
